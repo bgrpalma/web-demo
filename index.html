@@ -17,9 +17,8 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>I am Strata</strong>, a super simple<br />
-					responsive site template freebie<br />
-					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+					<h1><strong>I am OAego</strong>, a super simple<br />
+					calculator for all RC equipment!
 				</div>
 			</header>
 
@@ -29,87 +28,522 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2>
+							<h2> Just like a regular invoice, just input the type of customer type (A or B), the days for the rental, and the quantity of each item and the outdoor adventure can begin!!</h2>
 						</header>
-						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+						<p>Remember to fill the invoices with all the equipments requested!!</p>
 					</section>
 
 				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
+					<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Equipment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .item {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 300px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        #total {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rental Equipment</h1>
+    <p>Select the equipment, choose your pricing category, and enter the quantity and number of rental days.</p>
+    
+    <div>
+        <label>
+            <input type="radio" name="pricing" value="A" checked> UC Davis Student
+        </label>
+        <label>
+            <input type="radio" name="pricing" value="B"> Non-UC Davis
+        </label>
+    </div>
+
+    <div>
+        Rental Days: <input type="number" id="days" value="4" min="4">
+    </div>
+    
+    <!-- Camping Equipment -->
+    <h2>Camping</h2>
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="20" data-b-price="35"> 2-Person Tent
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="22" data-b-price="37"> 3-Person Tent
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="25" data-b-price="40"> 4-Person Tent
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="28" data-b-price="43"> 5-Person Tent
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="15" data-b-price="25"> Backpack (65-85 liters)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+     <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="7" data-b-price="12"> Backpacking Stove (w/o Fuel Canister)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="20"> Bear Canister
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="15"> Car Camping Stove (w/o Fuel Canister)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="14" data-b-price="20"> Cooler (45 quarts)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="5" data-b-price="7"> Headlamp (batteries not included)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+      <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="20" data-b-price="35"> Eno Hammock
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="22" data-b-price="37"> JetBoil (w/o Fuel Canister)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="25" data-b-price="40"> Lantern (batteries not included)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="28" data-b-price="43"> Stadium Seat
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="15" data-b-price="25"> Poncho
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+     <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="7" data-b-price="12"> Pot Set
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="20"> Sleeping Bag, Synthetic (-20°, 0°, or 20°)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="15"> Sleeping Pad
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="14" data-b-price="20"> Tarp (8'x10')
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="5" data-b-price="7"> Trekking Poles
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+      <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="15"> MSR Water Filter
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="111" data-b-price="170"> 2 Person Whole Shabang 
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="166" data-b-price="255"> 4 Person Package Whole Shabang 
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="20" data-b-price="35"> 4-Person Pyramid Shelter
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="15"> Crampons
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+     <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="12" data-b-price="17"> Ice Axe (60, 65, 70 or 75 cm)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="7" data-b-price="10"> Climbing Helmet
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="17" data-b-price="25"> Mountaineering Boots
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="24" data-b-price="34"> Climbing Package
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="8" data-b-price="12"> Climbing Shoes
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+      <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="8" data-b-price="10"> Climbing Helmet
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="8" data-b-price="12"> Climbing Harness
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="20" data-b-price="35"> Bouldering Crash Pads
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="35" data-b-price="50"> Cross Country Ski Package
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="20" data-b-price="30"> Cross Country Skis
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+     <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="15"> Cross Country Boots
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="5" data-b-price="5"> Cross Country Poles
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="3" data-b-price="6"> Gaiters
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="20"> Ski Day Pack (1300 cu.in.)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="20" data-b-price="27"> Snowshoes
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+        <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="35" data-b-price="50"> Inflatable Kayak (Single)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="50" data-b-price="65"> Inflatable Kayak (Double)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="35" data-b-price="50"> Stand Up Paddleboard (SUP) Package
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="5" data-b-price="10"> Dry Bag (10 or 20 liters)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="15"> Dry Bag (100 liters)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+     <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="8" data-b-price="10"> Helmet
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="15"> Kayak Paddle
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="15" data-b-price="20"> Paco Pad
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="5" data-b-price="8"> Paddle (Raft)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="10" data-b-price="15"> PFD/ Life Vest (Type III or V)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+      <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="7" data-b-price="10"> Splash Jacket
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="15" data-b-price="25"> Wetsuit (3 mm Farmer John)
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <div class="item">
+        <label>
+            <input type="checkbox" class="item-checkbox" data-a-price="7" data-b-price="10"> Wetsuit Booties
+        </label>
+        Quantity: <input type="number" class="quantity" value="1" min="1">
+        
+    </div>
+
+    <!-- ... Continue adding similar blocks for all items ... -->
+
+       <button onclick="calculateTotal()">Calculate Total</button>
+
+    <div id="total"></div>
+
+    <script>
+        function calculateTotal() {
+            const pricing = document.querySelector('input[name="pricing"]:checked').value;
+            const days = document.getElementById('days').value;
+            let total = 0;
+
+            document.querySelectorAll('.item-checkbox').forEach((checkbox, index) => {
+                if (checkbox.checked) {
+                    const quantity = document.querySelectorAll('.quantity')[index].value;
+                    const basePrice = (pricing === 'A') ? checkbox.dataset.aPrice : checkbox.dataset.bPrice;
+                    const dailyRate = basePrice / 4;
+                    const itemTotal = (basePrice * quantity) + ((days - 4) * dailyRate * quantity);
+                    total += itemTotal;
+                }
+            });
+
+            document.getElementById('total').innerText = `Total Cost: $${total.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
 
 				<!-- Three -->
 					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<h2>Found an Issue?</h2>
+						<p>Dont hesistate to tell Benedict!!</p>
 						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
+										1025 Ext Center Dr <br />
+										Davis, Ca 95616<br />
 										United States
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
 									</li>
 								</ul>
 							</div>
@@ -439,15 +873,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
 				</div>
 			</footer>
 
