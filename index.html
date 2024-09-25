@@ -40,19 +40,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Equipment</title>
-    <style>
-    /* Other existing styles */
-    input[type="checkbox"] {
-        margin-right: 10px;
-        display: inline-block;
-        visibility: visible;
-        width: 20px;
-        height: 20px;
-        -webkit-appearance: checkbox;
-        -moz-appearance: checkbox;
-        appearance: checkbox;
-    }
-   </style>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .item {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 300px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+            display: inline-block;
+            visibility: visible;
+            width: 20px;
+            height: 20px;
+            -webkit-appearance: checkbox; /* Ensures checkboxes are shown */
+            -moz-appearance: checkbox;
+            appearance: checkbox;
+        }
+        #total {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Rental Equipment</h1>
